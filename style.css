@@ -147,6 +147,40 @@ nav{
 .header-row{
     margin-top: -20vw;
 }
+.movie-row{
+    margin: 20px 30px;
+    display: flex;
+}
+.left-side{
+    position: relative;
+    background: rgb(0,29,29);
+    background: linear-gradient(135deg, rgba(0,29,29,1) 0%, rgba(36,35,35,1) 100%);
+}
+.left-side::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0;
+    opacity: 0.5;
+    top: 0;
+}
+.left-side img{
+
+}
+.text-in-img{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    margin: 30px;
+    color: #000;
+}
+.video-link{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 30px;
+}
 .product-slider{
     background: #fff;
     margin: 0 30px;
@@ -165,4 +199,52 @@ nav{
 }
 .product-slider .products::-webkit-scrollbar{
     display: none;
+}
+.product-slider-price{
+    background: #fff;
+    margin: 0 30px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+.product-slider-price .products{
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    margin-top: 10px;
+}
+.product-slider-price .products::-webkit-scrollbar{
+    display: none;
+}
+.product-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    min-width: 210px;
+    background: #fbfbfb;
+}
+.product-card img{
+    width: 110px;
+    margin: 0 50px;
+}
+.product-offer p{
+    background: #be0b3b;
+    color: #fff;
+    display: inline-block;
+    padding: 2px 5px;
+    border-radius: 2px;
+    margin: 8px 0;
+    font-size: 13px;
+}
+.product-offer span{
+    color: #be0b3b;
+    font-weight: 500;
+    font-size: 12px;
+}
+.product-price{
+    color: gray;
+    font-size: 13px;
+}
+.product-card h4{
+    color: #525252;
+    font-size: 14px;
 }
